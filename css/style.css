@@ -1,0 +1,617 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.example {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+p,
+h3,
+h2 {
+  margin: 0;
+}
+
+.section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Navbar CSS Start */
+.hide-it {
+  display: none;
+}
+
+.transform {
+  animation: navup 0.5s both !important;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9;
+}
+
+.transform-overlay {
+  animation: overlayup 0.5s both !important;
+}
+
+.transform-down {
+  animation: navdown 0.5s both !important;
+}
+
+.transform-overlay-down {
+  animation: overlaydown 0.5s both !important;
+}
+
+.icon {
+  position: fixed;
+  right: 0;
+  margin-top: 22px;
+  top: 0;
+  margin-right: 48px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.side-bar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 345px;
+  height: 100vh;
+  background-color: #1c6758;
+  z-index: 999;
+}
+
+.inner-links {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dp p {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 !important;
+  margin-left: 6px !important;
+  color: #ffffff;
+}
+
+.dp img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
+
+.refrence-links ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.refrence-links ul li {
+  background: #eef2e6;
+
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.refrence-links ul li a {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+
+  text-align: center;
+
+  color: #1c6758;
+}
+
+.hide-bar {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.hide-bar img {
+  width: 30px;
+}
+
+/* Navbar CSS End */
+/* Header CSS Start */
+.landing-head {
+  height: 12vh;
+}
+
+.landing-head p {
+  padding-top: 36px !important;
+  padding-bottom: 25px !important;
+  margin-left: 19px !important;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 0;
+  color: #000000;
+}
+
+.landing-img {
+  height: 90vh;
+}
+
+.landing-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Header CSS End */
+/* Profile CSS Start */
+.profile-bg {
+  background-image: url("../assets/profile-page/i-na-portrait.jpg");
+
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  opacity: 0.6;
+  min-height: 120vh;
+}
+
+.profile-bg h3 {
+  position: absolute;
+  top: 160px;
+  left: 160px;
+  color: white;
+}
+
+.profile-bg p {
+  color: white;
+  position: absolute;
+  top: 240px;
+  width: 436px;
+  left: 160px;
+}
+
+.profile-bg h3 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  color: #ffffff;
+}
+
+.arrow {
+  text-align: center;
+  cursor: pointer;
+}
+
+.arrow img {
+  width: 80px;
+  position: absolute;
+  bottom: 0;
+}
+
+.modal {
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 9999999999;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.project-modal {
+  border-radius: 18px;
+  box-shadow: 0 4px 26px -11px rgb(0 0 0 / 50%);
+  height: auto;
+  margin-top: 50px !important;
+  margin: 0 auto;
+  padding: 40px 50px !important;
+  position: relative;
+  width: 70vw;
+  height: 75vh;
+  z-index: 999999999;
+  background: #eef2e6;
+  border-radius: 15px;
+}
+
+.highlight {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+
+  color: #000000;
+}
+
+.content-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block {
+  width: 45%;
+}
+
+.cv-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.cv-btn a {
+  width: 100%;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.Modaloverlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9;
+}
+
+/* Profile CSS End */
+/* Concept page CSS Start */
+.main-container-bg {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #D6CDA4;
+}
+
+.yellow-bg {}
+
+.main-concept {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 40px 40px 0 40px;
+}
+
+.concept-block {
+  width: 45%;
+}
+
+.concept-block h3 {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+
+  color: #000000;
+}
+
+.concept-block p {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #000000;
+}
+
+.concept-block img {
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+}
+
+.concept-button {
+  text-align: center;
+  margin: 25px 0;
+
+
+}
+
+.concept-button button {
+  cursor: pointer;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+  width: 204px;
+  height: 41px;
+  text-align: center;
+  outline: none;
+  border: none;
+
+  background: #EEF2E6;
+  border-radius: 15px;
+}
+
+.youtube-video {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.youtube-video iframe {
+  margin: 0 auto;
+}
+
+/* Concept page CSS End */
+/* Creative page CSS End */
+.main-container {}
+
+.main-creative {
+  box-sizing: border-box;
+  background-color: #D6CDA4;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.eclipse img {
+  position: absolute;
+  /* left: 50%; */
+  z-index: 999;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.straight-line {
+
+  position: absolute;
+  /* left: 50%; */
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.ec-space {
+  top: 200px !important;
+  margin-bottom: 200px !important;
+}
+
+.ec-space2 {
+  top: 400px !important;
+  margin-bottom: 400px !important;
+}
+
+.ec-space3 {
+  top: 600px !important;
+  margin-bottom: 600px !important;
+}
+
+/* Creative page CSS End */
+
+/* Responsive CSS */
+@media (max-width: 1366px) {
+  .refrence-links ul li a {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+
+    text-align: center;
+
+    color: #1c6758;
+  }
+
+  .refrence-links ul li {
+    background: #eef2e6;
+
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 4px 0;
+    text-align: center;
+    border-radius: 15px;
+  }
+}
+
+/* Navbar Animation */
+@keyframes navup {
+  from {
+    right: -250px;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+@keyframes overlayup {
+  from {
+    background-color: transparent;
+  }
+
+  to {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes overlaydown {
+  from {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+@keyframes navdown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/* Responsive Media Query */
+@media (min-width:1450px) {
+  .profile-bg h3 {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: normal;
+    color: #ffffff;
+    top: 200px;
+    left: 160px;
+  }
+
+  .profile-bg p {
+    color: white;
+    position: absolute;
+    top: 186px;
+    font-size: 1.3vw;
+    width: 27vw;
+    margin-top: 100px;
+    left: 160px;
+
+
+  }
+
+  .concept-block img {
+    position: absolute;
+    bottom: 0;
+    width: 33%;
+  }
+
+}
+
+@media (min-width:1500px) {
+  .concept-block h3 {
+
+    font-size: 45px;
+  }
+
+  .youtube-video {
+    margin: 50px 0;
+    text-align: center;
+  }
+
+  .youtube-video iframe {
+    margin: 0 auto;
+    width: 450px;
+    height: 300px;
+  }
+}
+
+@media (min-width:1650px) {
+  .profile-bg p {
+    color: white;
+    position: absolute;
+
+    font-size: 1.3vw;
+    width: 27vw;
+    margin-top: 120px;
+    left: 160px;
+  }
+
+
+
+  .youtube-video {
+    margin: 70px 0;
+    text-align: center;
+  }
+
+}
+
+@media (min-width:1750px) {
+  .main-concept {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 97px 41px 0 74px;
+  }
+
+
+
+  .youtube-video {
+    margin: 70px 0;
+    text-align: center;
+  }
+
+}
+
+@media (min-width:2000px) {
+  .profile-bg p {
+    color: white;
+    position: absolute;
+
+    font-size: 1.3vw;
+    width: 27vw;
+    margin-top: 180px;
+    left: 160px;
+  }
+
+  .main-container-bg {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background-color: #D6CDA4;
+  }
+
+}
