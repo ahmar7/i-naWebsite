@@ -399,7 +399,7 @@ h2 {
 .main-creative {
   box-sizing: border-box;
   background-color: #D6CDA4;
-  min-height: 100vh;
+  min-height: 200vh;
   width: 100%;
   padding-top: 80px;
 }
@@ -413,29 +413,138 @@ h2 {
   margin: auto;
 }
 
-.straight-line {
-
+.eclipse p {
   position: absolute;
-  /* left: 50%; */
-  z-index: 9999;
-  left: 0;
+  left: 52%;
+  z-index: 999;
+
+  /* left: 0; */
   right: 0;
   margin: auto;
 }
 
+
+
+.line img {
+  height: 1050px;
+  width: 1px !important;
+}
+
 .ec-space {
-  top: 200px !important;
-  margin-bottom: 200px !important;
+  margin-top: 250px !important;
+  margin-bottom: 250px !important;
 }
 
 .ec-space2 {
-  top: 400px !important;
-  margin-bottom: 400px !important;
+  margin-top: 450px !important;
+  margin-bottom: 450px !important;
 }
 
 .ec-space3 {
-  top: 600px !important;
-  margin-bottom: 600px !important;
+  margin-top: 650px !important;
+  margin-bottom: 650px !important;
+}
+
+.ec-space4 {
+  margin-top: 850px !important;
+  margin-bottom: 850px !important;
+}
+
+.ec-space5 {
+  margin-top: 1050px !important;
+  margin-bottom: 1050px !important;
+}
+
+.image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  /* left: 50%; */
+  z-index: 999;
+  top: 130px;
+  left: -520px;
+  right: 0;
+
+  margin: auto;
+}
+
+
+.extra-image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  /* left: 50%; */
+  z-index: 999;
+  top: 180px;
+  left: 170px;
+  right: 0;
+
+  margin: auto;
+}
+
+.extra-image-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  /* left: 50%; */
+  z-index: 999;
+  top: 220px;
+  left: -40px;
+  right: 0;
+
+  margin: auto;
+
+}
+
+.extra-image-box span {
+  background-color: white;
+  padding: 5px 10px;
+}
+
+.extra-image-other {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  /* left: 50%; */
+  z-index: 999;
+  top: 250px;
+  left: 40px;
+  right: 0;
+
+  margin: auto;
+}
+
+.eclipse P {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #000000;
+}
+
+.extra-image-other2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  /* left: 50%; */
+  z-index: 999;
+  top: 280px;
+  left: -40px;
+  right: 0;
+
+  margin: auto;
 }
 
 /* Creative page CSS End */
