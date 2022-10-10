@@ -32,6 +32,90 @@ let showResumeModal = () => {
 };
 let closeModal = () => {
   let resumeModal = document.getElementById("resumeModal");
+
   resumeModal.classList.add("hide-it");
+  body.style.overflow = "auto";
+};
+let closeImg = () => {
+  let imgModal = document.getElementById("imgModal");
+
+  imgModal.classList.add("hide-it");
+  body.style.overflow = "auto";
+};
+let closeResearch = () => {
+  let researchModal = document.getElementById("researchModal");
+
+  researchModal.classList.add("hide-it");
+  body.style.overflow = "auto";
+};
+
+let openImg = () => {
+  let imgModal = document.getElementById("imgModal");
+  imgModal.classList.remove("hide-it");
+  body.style.overflow = "hidden";
+};
+let openResearch = () => {
+  let researchModal = document.getElementById("researchModal");
+  researchModal.classList.remove("hide-it");
+  body.style.overflow = "hidden";
+};
+let BookOneOpen = () => {
+  let bookOne = document.getElementById("bookOne");
+  bookOne.classList.remove("hide-it");
+  body.style.overflow = "hidden";
+};
+let CloseBookOne = () => {
+  let bookOne = document.getElementById("bookOne");
+  bookOne.classList.add("hide-it");
+  body.style.overflow = "auto";
+};
+let BookTwoOpen = () => {
+  let bookTwo = document.getElementById("bookTwo");
+  bookTwo.classList.remove("hide-it");
+  body.style.overflow = "hidden";
+};
+let CloseBookTwo = () => {
+  let bookTwo = document.getElementById("bookTwo");
+  bookTwo.classList.add("hide-it");
+  body.style.overflow = "auto";
+};
+let BookThreeOpen = () => {
+  let bookThree = document.getElementById("bookThree");
+  bookThree.classList.remove("hide-it");
+  body.style.overflow = "hidden";
+};
+let CloseBookThree = () => {
+  let bookThree = document.getElementById("bookThree");
+  bookThree.classList.add("hide-it");
+  body.style.overflow = "auto";
+};
+let BookFourOpen = () => {
+  let BookFour = document.getElementById("bookFour");
+  BookFour.classList.remove("hide-it");
+  body.style.overflow = "hidden";
+};
+let CloseBookFour = () => {
+  let BookFour = document.getElementById("bookFour");
+  BookFour.classList.add("hide-it");
+  body.style.overflow = "auto";
+};
+let BookFiveOpen = () => {
+  let bookFive = document.getElementById("bookFive");
+  bookFive.classList.remove("hide-it");
+  body.style.overflow = "hidden";
+};
+let CloseBookFive = () => {
+  let bookFive = document.getElementById("bookFive");
+  bookFive.classList.add("hide-it");
+  body.style.overflow = "auto";
+};
+let BookSixOpen = () => {
+  let bookSix = document.getElementById("bookSix");
+  bookSix.classList.remove("hide-it");
+  body.style.overflow = "hidden";
+};
+let CloseBookSix = () => {
+  let bookSix = document.getElementById("bookSix");
+  bookSix.classList.add("hide-it");
   body.style.overflow = "auto";
 };

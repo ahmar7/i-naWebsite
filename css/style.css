@@ -466,7 +466,7 @@ h2 {
   top: 130px;
   left: -520px;
   right: 0;
-
+  cursor: pointer;
   margin: auto;
 }
 
@@ -505,6 +505,7 @@ h2 {
 .extra-image-box span {
   background-color: white;
   padding: 5px 10px;
+  cursor: pointer;
 }
 
 .extra-image-other {
@@ -547,7 +548,99 @@ h2 {
   margin: auto;
 }
 
+.area-modal {
+  border-radius: 18px;
+  box-shadow: 0 4px 26px -11px rgb(0 0 0 / 50%);
+  /* height: 100%; */
+  margin-top: 50px !important;
+  margin: 0 auto;
+  padding: 10px 50px 50px 50px !important;
+  position: relative;
+  width: 60vw;
+  /* height: 75vh; */
+  z-index: 999999999;
+  overflow: auto;
+  background: #eef2e6;
+  border-radius: 15px;
+}
+
+.content-area-modal h1 {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #000000;
+  text-align: center;
+
+
+}
+
+.youtube-vid {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.youtube-vid iframe {
+  width: 50%;
+  height: 50%;
+}
+
+.youtube-vid p {
+  margin-top: 50px !important;
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.content-area-modal h4 {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+.last-para {
+  margin-bottom: 30px;
+}
+
 /* Creative page CSS End */
+/* My Book page CSS End */
+.main-book {
+  background-color: #D6CDA4;
+  padding: 80px;
+  min-height: 100vh;
+}
+
+.upper, .lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.upper img, .lower img {
+  cursor: pointer;
+
+  min-height: 439px;
+  margin: 50px 0;
+  width: 300px;
+}
+
+
+
+.book-img {
+  width: 40% !important;
+}
+
+.book-detail {
+  width: 55% !important;
+}
+
+/* My Book page CSS End */
 
 /* Responsive CSS */
 @media (max-width: 1366px) {
@@ -680,6 +773,7 @@ h2 {
 
 
 
+
   .youtube-video {
     margin: 70px 0;
     text-align: center;
@@ -706,6 +800,13 @@ h2 {
 }
 
 @media (min-width:2000px) {
+  .upper img, .lower img {
+
+    min-height: 400px;
+    margin: 50px 0;
+    width: 400px;
+  }
+
   .profile-bg p {
     color: white;
     position: absolute;

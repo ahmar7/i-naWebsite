@@ -1,0 +1,343 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <title>I-na Website</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet"
+          href="./css/style.css" />
+    <!-- Roboto Fonts CDN -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com" />
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+          rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Navbar  Start -->
+        <div class="header">
+            <div onclick="showBar()"
+                 class="icon">
+                <img draggable="false"
+                     src="./assets/icons/Hamburger [button].svg"
+                     alt="" />
+            </div>
+            <div onclick="closeBar()"
+                 id="overlay"
+                 class="overlay  hide-it"></div>
+            <div class="side-bar hide-it"
+                 id="sideBar">
+                <div class="inner-links">
+                    <div class="dp">
+                        <img src="./assets/Navbar/side-bardp.png"
+                             alt="" />
+                        <p>I-na Phuyuthanon</p>
+                    </div>
+                    <div class="refrence-links">
+                        <ul>
+                            <li onclick="closeBar()"><a href="./profile.html">I-na’s profile</a></li>
+                            <li onclick="closeBar()"><a href="./concept.html">I-na’s concept</a></li>
+                            <li onclick="closeBar()"><a href="./creative.html">Creative work</a></li>
+                            <li onclick="closeBar()"><a href="./book.html">My Book</a></li>
+                            <li onclick="closeBar()"><a href="">Research</a></li>
+                            <li onclick="closeBar()"><a href="">My travel stories</a></li>
+                            <li onclick="closeBar()"><a href="">The 1984 Space</a></li>
+                            <li onclick="closeBar()"><a href="">My team</a></li>
+                            <li onclick="closeBar()"><a href="">Get in touch</a></li>
+                        </ul>
+                    </div>
+                    <div onclick="closeBar()"
+                         class="hide-bar">
+                        <img src="./assets/icons/Vector.svg"
+                             alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar  End -->
+        <!-- Book Area Start -->
+        <div class="main-container">
+            <div class="main-book">
+                <div class="upper">
+                    <div onclick="BookOneOpen()" class="book-cover">
+                        <img src="./assets/book-page/book1.png"
+                             alt="">
+                    </div>
+                    <div  onclick="BookTwoOpen()"  class="book-cover">
+                        <img src="./assets/book-page/book2.png"
+                             alt="">
+                    </div>
+                    <div  onclick="BookThreeOpen()"  class="book-cover">
+                        <img src="./assets/book-page/book3.png"
+                             alt="">
+                    </div>
+                </div>
+               <div class="lower"><div   onclick="BookFourOpen()" class="book-cover">
+                <img src="./assets/book-page/book4.png"
+                     alt="">
+            </div>
+            <div  onclick="BookFiveOpen()"  class="book-cover">
+                <img src="./assets/book-page/book5.png"
+                     alt="">
+            </div>
+            <div  onclick="BookSixOpen()"  class="book-cover">
+                <img src="./assets/book-page/book6.png"
+                     alt="">
+            </div></div>
+            </div>
+        </div>
+        <!-- Book Area End -->
+
+    </div>
+    <!-- Book 1 detail Modal Start -->
+    <div class="modal hide-it"
+         id="bookOne">
+        <div class="modal-content">
+            <div id="Modaloverlay"
+                 class="Modaloverlay"></div>
+            <div class="project-modal">
+                <div class="content-block">
+                    <div class="block book-img">
+                      <img src="./assets/book-page/book1.png" alt="">
+                    </div>
+                    <div class="block book-detail">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                        porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                        non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor
+                        diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. 
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. 
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                    
+                    </div>
+                </div>
+                <div onclick="CloseBookOne()"
+                     class="hide-bar">
+                    <img src="./assets/Navbar/hide.png"
+                         alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Book 1 detail Modal End -->
+    <!-- Book 2 detail Modal Start -->
+    <div class="modal hide-it"
+         id="bookTwo">
+        <div class="modal-content">
+            <div id="Modaloverlay"
+                 class="Modaloverlay"></div>
+            <div class="project-modal">
+                <div class="content-block">
+                    <div class="block book-img">
+                      <img src="./assets/book-page/book2.png" alt="">
+                    </div>
+                    <div class="block book-detail">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                        porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                        non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor
+                        diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. 
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. 
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                    
+                    </div>
+                </div>
+                <div onclick="CloseBookTwo()"
+                     class="hide-bar">
+                    <img src="./assets/Navbar/hide.png"
+                         alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Book 2 detail Modal End -->
+    <!-- Book 3 detail Modal Start -->
+    <div class="modal hide-it"
+         id="bookThree">
+        <div class="modal-content">
+            <div id="Modaloverlay"
+                 class="Modaloverlay"></div>
+            <div class="project-modal">
+                <div class="content-block">
+                    <div class="block book-img">
+                      <img src="./assets/book-page/book3.png" alt="">
+                    </div>
+                    <div class="block book-detail">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                        porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                        non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor
+                        diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. 
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. 
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                    
+                    </div>
+                </div>
+                <div onclick="CloseBookThree()"
+                     class="hide-bar">
+                    <img src="./assets/Navbar/hide.png"
+                         alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Book 3 detail Modal End -->
+    <!-- Book 4 detail Modal Start -->
+    <div class="modal hide-it"
+         id="bookFour">
+        <div class="modal-content">
+            <div id="Modaloverlay"
+                 class="Modaloverlay"></div>
+            <div class="project-modal">
+                <div class="content-block">
+                    <div class="block book-img">
+                      <img src="./assets/book-page/book4.png" alt="">
+                    </div>
+                    <div class="block book-detail">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                        porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                        non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor
+                        diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. 
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. 
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                    
+                    </div>
+                </div>
+                <div onclick="CloseBookFour()"
+                     class="hide-bar">
+                    <img src="./assets/Navbar/hide.png"
+                         alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Book 4 detail Modal End -->
+    <!-- Book 5 detail Modal Start -->
+    <div class="modal hide-it"
+         id="bookFive">
+        <div class="modal-content">
+            <div id="Modaloverlay"
+                 class="Modaloverlay"></div>
+            <div class="project-modal">
+                <div class="content-block">
+                    <div class="block book-img">
+                      <img src="./assets/book-page/book5.png" alt="">
+                    </div>
+                    <div class="block book-detail">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                        porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                        non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor
+                        diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. 
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. 
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                    
+                    </div>
+                </div>
+                <div onclick="CloseBookFive()"
+                     class="hide-bar">
+                    <img src="./assets/Navbar/hide.png"
+                         alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Book 5 detail Modal End -->
+    <!-- Book 6 detail Modal Start -->
+    <div class="modal hide-it"
+         id="bookSix">
+        <div class="modal-content">
+            <div id="Modaloverlay"
+                 class="Modaloverlay"></div>
+            <div class="project-modal">
+                <div class="content-block">
+                    <div class="block book-img">
+                      <img src="./assets/book-page/book6.png" alt="">
+                    </div>
+                    <div class="block book-detail">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                        porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                        non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor
+                        diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. 
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                        ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                        rhoncus arcu erat et orci. 
+                        rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                    
+                    </div>
+                </div>
+                <div onclick="CloseBookSix()"
+                     class="hide-bar">
+                    <img src="./assets/Navbar/hide.png"
+                         alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Book 6 detail Modal End -->
+</body>
+<script src="./js/app.js"></script>
+
+</html>

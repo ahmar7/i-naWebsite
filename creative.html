@@ -46,7 +46,7 @@
                             <li onclick="closeBar()"><a href="./profile.html">I-na’s profile</a></li>
                             <li onclick="closeBar()"><a href="./concept.html">I-na’s concept</a></li>
                             <li onclick="closeBar()"><a href="./creative.html">Creative work</a></li>
-                            <li onclick="closeBar()"><a href="">My Book</a></li>
+                            <li onclick="closeBar()"><a href="./book.html">My Book</a></li>
                             <li onclick="closeBar()"><a href="">Research</a></li>
                             <li onclick="closeBar()"><a href="">My travel stories</a></li>
                             <li onclick="closeBar()"><a href="">The 1984 Space</a></li>
@@ -91,17 +91,17 @@
         <div class="image-box">
                     
 
-            <img src="./assets/work-page/videoartone 1.png" alt="">
-            <img src="./assets/work-page/videoartone 2.png" alt="">
-            <img src="./assets/work-page/videoartone 3.png" alt="">
-            <img src="./assets/work-page/videoartone 4.png" alt="">
-            <img src="./assets/work-page/Line 5.png"
+            <img onclick="openImg()" src="./assets/work-page/videoartone 1.png" alt="">
+            <img onclick="openImg()" src="./assets/work-page/videoartone 2.png" alt="">
+            <img onclick="openImg()" src="./assets/work-page/videoartone 3.png" alt="">
+            <img onclick="openImg()" src="./assets/work-page/videoartone 4.png" alt="">
+            <img onclick="openImg()" src="./assets/work-page/Line 5.png"
                  alt="">
         </div>
         <div class="extra-image-box">
             <img src="./assets/work-page/Line 5.png"
                  alt="">
-                 <span>Title of Research</span>
+                 <span onclick="openResearch()">Title of Research</span>
         </div>
         <div class="extra-image-line"> 
              <img src="./assets/work-page/Line 5.png"
@@ -118,7 +118,100 @@
             </div>
         </div>
         <!-- Creative Page End -->
-
+<!-- Modal popup start -->
+<div class="modal hide-it" style="overflow: auto;"
+     id="imgModal">
+    <div class="modal-content">
+        <div id="Modaloverlay"
+             class="Modaloverlay"></div>
+        <div class="area-modal">
+            <div class="content-area-modal">
+                 <h1>Video art - My fear my everyday life</h1>
+                 <div class="youtube-vid">
+                    <iframe  
+                            src="https://www.youtube.com/embed/I6AblS_z6F8"
+                            title="Gearing up for the Bangkok Art Biennale with I-Na Phuyuthanon"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                            porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                            non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor
+                            diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.</p>
+                 </div>
+            </div>
+            <div onclick="closeImg()"
+                 class="hide-bar">
+                <img src="./assets/Navbar/hide.png"
+                     alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal hide-it" style="overflow: auto;"
+     id="researchModal">
+    <div class="modal-content">
+        <div id="Modaloverlay"
+             class="Modaloverlay"></div>
+        <div class="area-modal">
+            <div class="content-area-modal">
+                  
+                  <h4>หัวข้อวิจัย: <br> ภาวะกดดันของการแสดงออกอตัลกัษณ์ทางชาติพันธุ์ของมลายูปาตานี</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                            porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                            non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor
+                            diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                            porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                            non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor
+                            diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.</p>
+                            <p class="last-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                            porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                            non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor
+                            diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.</p>
+                 
+            </div>
+            <div onclick="closeResearch()"
+                 class="hide-bar">
+                <img src="./assets/Navbar/hide.png"
+                     alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal popup end -->
     </div>
 </body>
 <script src="./js/app.js"></script>
