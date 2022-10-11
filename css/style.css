@@ -393,7 +393,7 @@ h2 {
 }
 
 /* Concept page CSS End */
-/* Creative page CSS End */
+/* Creative page CSS Start */
 .main-container {}
 
 .main-creative {
@@ -609,7 +609,7 @@ h2 {
 }
 
 /* Creative page CSS End */
-/* My Book page CSS End */
+/* My Book page CSS Start */
 .main-book {
   background-color: #D6CDA4;
   padding: 80px;
@@ -641,6 +641,283 @@ h2 {
 }
 
 /* My Book page CSS End */
+/* Stories page CSS Start */
+.main-stories {
+  background-color: #D6CDA4;
+  min-height: 100vh;
+
+}
+
+.heading-story {
+  text-align: center;
+  padding: 35px 0;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.block-story {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: flex-start;
+
+}
+
+.story-section {
+  background-color: white;
+
+  background: #EEF2E6;
+  border-radius: 15px;
+  padding: 30px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  height: auto;
+}
+
+.story-section h3 {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 42px;
+
+  color: #000000;
+
+}
+
+.story-section p {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+
+}
+
+
+
+.story-section img {
+  width: 250px;
+  height: 230px;
+
+  padding: 15px 0;
+}
+
+.empty {
+  width: 300px;
+  height: 400px;
+}
+
+.small-modal {
+  width: 40vw !important;
+}
+
+.prev {
+  left: 40px;
+  position: absolute;
+  top: 21vw;
+  cursor: pointer;
+}
+
+.next {
+  right: 40px;
+  position: absolute;
+  top: 21vw;
+  cursor: pointer;
+}
+
+.mySlides img {
+  width: 100%;
+}
+
+/* Stories page CSS End */
+/* space page CSS Start */
+.new {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.new h3 {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.new p {
+  text-align: center;
+  font-size: 22px;
+}
+
+
+
+/* space page CSS End */
+/* Team page CSS Start */
+.main-team {
+  background-color: #D6CDA4;
+  min-height: 100vh;
+}
+
+.main-team h3 {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+
+  padding: 20px 0;
+  padding-top: 35px;
+
+  color: #000000;
+  text-align: center;
+}
+
+.team-block {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.team-sec img {
+  padding: 15px;
+}
+
+.team-sec {
+  background-color: white;
+  margin: 0 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.imgoverlay {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+
+
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.text-ul {
+  list-style: none;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+
+
+  margin-top: 20px;
+  padding: 0;
+  padding-left: 30px;
+}
+
+.text-ul li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+}
+
+.title-text {
+  opacity: 0;
+  visibility: hidden;
+
+
+  padding-left: 30px !important;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+  z-index: 99;
+}
+
+.title-text p {
+  margin: 0;
+}
+
+.title-text h3 {
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+}
+
+.team-sec:hover .title-text,
+.team-sec:hover .imgoverlay,
+.team-sec:hover .text-ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Team page CSS End */
+/* Contact page CSS Start */
+.main-contact {
+  background-color: #D6CDA4;
+  min-height: 100vh;
+
+
+
+
+
+
+  box-sizing: border-box;
+
+
+  padding-top: 100px !important;
+}
+
+.inner-contact {
+  background: #EEF2E6;
+  border-radius: 15px;
+  width: 75vw;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+  height: 75vh;
+}
+
+.inner-contact h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  margin-top: 10px;
+  text-align: center;
+
+  color: #000000;
+
+}
+
+.social-img {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.social-img a {
+  margin: 0 5px;
+}
+
+/* Contact page CSS End */
 
 /* Responsive CSS */
 @media (max-width: 1366px) {

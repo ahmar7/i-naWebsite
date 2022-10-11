@@ -1,0 +1,332 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <title>I-na Website</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet"
+          href="./css/style.css" />
+    <!-- Roboto Fonts CDN -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com" />
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+          rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Navbar  Start -->
+        <div class="header">
+            <div onclick="showBar()"
+                 class="icon">
+                <img draggable="false"
+                     src="./assets/icons/Hamburger [button].svg"
+                     alt="" />
+            </div>
+            <div onclick="closeBar()"
+                 id="overlay"
+                 class="overlay  hide-it"></div>
+            <div class="side-bar hide-it"
+                 id="sideBar">
+                <div class="inner-links">
+                    <div class="dp">
+                        <img src="./assets/Navbar/side-bardp.png"
+                             alt="" />
+                        <p>I-na Phuyuthanon</p>
+                    </div>
+                    <div class="refrence-links">
+                        <ul>
+                            <li onclick="closeBar()"><a href="./profile.html">I-na’s profile</a></li>
+                            <li onclick="closeBar()"><a href="./concept.html">I-na’s concept</a></li>
+                            <li onclick="closeBar()"><a href="./creative.html">Creative work</a></li>
+                            <li onclick="closeBar()"><a href="./book.html">My Book</a></li>
+                            <li onclick="closeBar()"><a href="./research.html">Research</a></li>
+                            <li onclick="closeBar()"><a href="./stories.html">My travel stories</a></li>
+                            <li onclick="closeBar()"><a href="./space.html">The 1984 Space</a></li>
+                            <li onclick="closeBar()"><a href="./team.html">My team</a></li>
+                            <li onclick="closeBar()"><a href="./contact.html">Get in touch</a></li>
+                        </ul>
+                    </div>
+                    <div onclick="closeBar()"
+                         class="hide-bar">
+                        <img src="./assets/icons/Vector.svg"
+                             alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar  End -->
+        <!-- Stories Page Area Start -->
+        <div class="main-container">
+            <div class="main-stories">
+                <h2 class="heading-story">
+                    My travel stories
+                </h2>
+                
+                <div class="story-collection">
+                    <div class="block-story">
+                        <div onclick="BookOneOpen()"  class="story-section">
+                            <h3>London, UK</h3>
+                            <p>September, 2019</p>
+                            <img src="./assets/stories-page/img1.png"
+                                 alt="">
+                        </div>
+                        <div  onclick="BookOneOpen()" class="story-section empty">
+                            <!-- <img src=""
+                                 alt=""> -->
+                        </div>
+                        <div  onclick="BookOneOpen()"  class="story-section">
+                            <h3>Lorem Ipsum</h3>
+                            <p>September, 2019</p>
+                            <img src="./assets/stories-page/img2.png"
+                                 alt="">
+                        </div>
+                    </div>
+                    <div class="block-story">
+                        <div   onclick="BookOneOpen()"  class="story-section"><h3>Lorem Ipsum</h3>
+                        <p>September, 2019</p>
+                            <img src="./assets/stories-page/img3.png"
+                                 alt="">
+                        </div>
+                        <div  onclick="BookOneOpen()"  class="story-section empty">
+                            <!-- <img src=""
+                                 alt=""> -->
+                        </div>
+                        <div   onclick="BookOneOpen()"class="story-section"><h3>Lorem Ipsum</h3>
+                        <p>September, 2019</p>
+                            <img src="./assets/stories-page/img4.png"
+                                 alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Story 1 Modal start -->
+            <div class="modal  hide-it"
+                 style="overflow: auto;"
+                 id="bookOne">
+                <div class="modal-content">
+                    <div id="Modaloverlay"
+                         class="Modaloverlay"></div>
+                    <div class="area-modal small-modal">
+                        <div class="content-area-modal">
+            <div class="mySlides fade">
+            <h2 class="heading-story">
+                I-na @ London 12/12/2019
+            </h2>
+                <img src="./assets/stories-page/img1.png"
+                     >
+                     <br>
+                     <br>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque
+                            vestibulum, nisl risus
+                            porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat.
+                            Aliquam sit amet augue
+                            non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum,
+                            nisl risus porttitor
+                            diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit
+                            amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                            porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                            non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                            porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                            non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.</p>
+                          
+            </div>
+            
+            <div class="mySlides fade">
+                <h2 class="heading-story">
+                    I-na @ London 12/12/2019
+                </h2>
+                <img src="./assets/stories-page/img2.png"
+                     ><br><br>
+                        <p> 
+                            porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat.
+                            Aliquam sit amet augue
+                            non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum,
+                            nisl risus porttitor
+                            diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit
+                            amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                            porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                            non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                            porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                            non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.</p>
+                             
+            </div>
+            
+            <div class="mySlides fade">
+                <h2 class="heading-story">
+                    I-na @ London 12/12/2019
+                </h2>
+                <img src="./assets/stories-page/img3.png"
+                     > <br><br>
+                        <p>  
+                            vestibulum, nisl risus
+                            porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat.
+                            Aliquam sit amet augue
+                            non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum,
+                            nisl risus porttitor
+                            diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit
+                            amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                            porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                            non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                            porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                            non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.</p>
+            </div>
+            <div class="mySlides fade">
+                <h2 class="heading-story">
+                    I-na @ London 12/12/2019
+                </h2>
+                <img src="./assets/stories-page/img4.png"
+                     > <br><br>
+                        <p>  
+                            vestibulum, nisl risus
+                            porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat.
+                            Aliquam sit amet augue
+                            non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum,
+                            nisl risus porttitor
+                            diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit
+                            amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                            porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                            non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                            porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                            non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.</p>
+            </div>
+            <div class="mySlides fade">
+                <h2 class="heading-story">
+                    I-na @ London 12/12/2019
+                </h2>
+                <img src="./assets/stories-page/img5.png"
+                     > <br><br>
+                        <p>  
+                            vestibulum, nisl risus
+                            porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat.
+                            Aliquam sit amet augue
+                            non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum,
+                            nisl risus porttitor
+                            diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit
+                            amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                            porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                            non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                            porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                            non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.</p>
+            </div>
+            <div class="mySlides fade">
+                <h2 class="heading-story">
+                    I-na @ London 12/12/2019
+                </h2>
+                <img src="./assets/stories-page/img6.png"
+                     > <br><br>
+                        <p>  
+                            vestibulum, nisl risus
+                            porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat.
+                            Aliquam sit amet augue
+                            non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum,
+                            nisl risus porttitor
+                            diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit
+                            amet augue non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                            porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                            non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                            tellus.Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum, nisl risus
+                            porttitor diam, ac
+                            rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit amet augue
+                            non elit
+                            ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin tellus.</p>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev"
+               onclick="plusSlides(-1)"><img src="./assets/stories-page/left.png" alt=""></a>
+            <a class="next"
+               onclick="plusSlides(1)"><img src="./assets/stories-page/right.png"
+                 alt=""></a>
+                
+                          </div>
+                        <div onclick="CloseBookOne()"
+                             class="hide-bar">
+                            <img src="./assets/Navbar/hide.png"
+                                 alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Story 1 Modal end -->
+           
+        </div>
+        <!-- Stories Page Area End -->
+
+    </div>
+</body>
+<script src="./js/app.js"></script>
+<script src="./js/slider.js"></script>
+
+</html>
