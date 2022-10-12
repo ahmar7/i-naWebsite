@@ -18,17 +18,24 @@
           crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
           rel="stylesheet" />
+          <!-- Font Awesome Icons -->
+        <script src="https://kit.fontawesome.com/6fd519cc43.js"
+                crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="background-color: #D6CDA4;">
     <div class="main-container">
         <!-- Navbar  Start -->
         <div class="header">
             <div onclick="showBar()"
-                 class="icon">
+                 class="icon" id="icon-desk">
                 <img draggable="false"
                      src="./assets/icons/Hamburger [button].svg"
                      alt="" />
+            </div>
+            <div onclick="closeBar()"
+                 class="nav-hide icon-desk" id="navHide">
+            <i class="fa-solid fa-x"></i>
             </div>
             <div onclick="closeBar()"
                  id="overlay"
@@ -55,7 +62,7 @@
                         </ul>
                     </div>
                     <div onclick="closeBar()"
-                         class="hide-bar">
+                         class="hide-bar hider">
                         <img src="./assets/icons/Vector.svg"
                              alt="" />
                     </div>
@@ -70,7 +77,7 @@
                 <h3>Hello! I’m I-na,</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor......</p>
                 <div onclick="showResumeModal()"
-                     class="arrow">
+                     class="arrow toggle">
                     <img src="./assets/profile-page/white-down-arrow-png-2 1.png"
                          alt="">
                 </div>
@@ -149,6 +156,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="mbl-below">
+                <p><span class="make-bld">Resume,</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor, diam in scelerisque vestibulum,
+                nisl risus porttitor diam, ac rhoncus arcu erat et orci. Vestibulum tincidunt elementum ante eget placerat. Aliquam sit
+                amet augue non elit ullamcorper auctor quis eu enim. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                tellus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac elit luctus, convallis mi nec, sollicitudin
+                tellus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>
         <!-- Profile Area End -->

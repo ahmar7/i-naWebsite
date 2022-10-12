@@ -1,9 +1,14 @@
 let body = document.querySelector("body");
+let iconDesk = document.getElementById("icon-desk");
+let navHide = document.getElementById("navHide");
 let showBar = () => {
   let sideBar = document.getElementById("sideBar");
   let overlay = document.getElementById("overlay");
+
   sideBar.classList.remove("hide-it");
   overlay.classList.remove("hide-it");
+  iconDesk.classList.add("icon-desk");
+  navHide.classList.remove("icon-desk");
   sideBar.classList.add("transform");
   overlay.classList.add("transform-overlay");
   sideBar.classList.remove("transform-down");
@@ -13,7 +18,8 @@ let showBar = () => {
 let closeBar = () => {
   let sideBar = document.getElementById("sideBar");
   let overlay = document.getElementById("overlay");
-
+  iconDesk.classList.remove("icon-desk");
+  navHide.classList.add("icon-desk");
   sideBar.classList.remove("transform");
   overlay.classList.remove("transform-overlay");
   sideBar.classList.add("transform-down");

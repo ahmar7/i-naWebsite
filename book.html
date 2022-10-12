@@ -17,7 +17,9 @@
           href="https://fonts.gstatic.com"
           crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-          rel="stylesheet" />
+          rel="stylesheet" /><!-- Font Awesome Icons -->
+        <script src="https://kit.fontawesome.com/6fd519cc43.js"
+                crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -25,10 +27,16 @@
         <!-- Navbar  Start -->
         <div class="header">
             <div onclick="showBar()"
-                 class="icon">
+                 class="icon"
+                 id="icon-desk">
                 <img draggable="false"
                      src="./assets/icons/Hamburger [button].svg"
                      alt="" />
+            </div>
+            <div onclick="closeBar()"
+                 class="nav-hide icon-desk"
+                 id="navHide">
+                <i class="fa-solid fa-x"></i>
             </div>
             <div onclick="closeBar()"
                  id="overlay"
@@ -55,7 +63,7 @@
                         </ul>
                     </div>
                     <div onclick="closeBar()"
-                         class="hide-bar">
+                         class="hide-bar hider">
                         <img src="./assets/icons/Vector.svg"
                              alt="" />
                     </div>

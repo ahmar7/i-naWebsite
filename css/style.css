@@ -33,6 +33,10 @@ h2 {
   display: none;
 }
 
+.nav-hide {
+  display: none;
+}
+
 .transform {
   animation: navup 0.5s both !important;
 }
@@ -61,6 +65,16 @@ h2 {
 }
 
 .icon {
+  position: fixed;
+  right: 0;
+  margin-top: 22px;
+  top: 0;
+  margin-right: 48px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.nav-hide {
   position: fixed;
   right: 0;
   margin-top: 22px;
@@ -305,6 +319,22 @@ h2 {
   bottom: 0;
   position: fixed;
   z-index: 9;
+}
+
+.mbl-below {
+  display: none;
+  background: #EEF2E6;
+  border-radius: 15px;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 10px !important;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.make-bld {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 /* Profile CSS End */
@@ -914,6 +944,7 @@ h2 {
   margin: 0 5px;
 }
 
+
 /* Contact page CSS End */
 
 
@@ -1125,13 +1156,116 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .profile-bg {
+    background-image: url(../assets/profile-page/i-na-portrait.jpg);
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 0.6;
+    min-height: 76vh;
+    height: 45vh;
+  }
+
+  .mbl-below {
+    display: block;
+  }
+
+
+  .profile-bg h3 {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    margin-left: 20px;
+    font-size: 30px;
+    color: white;
+  }
+
+
+
+  .profile-bg p {
+    color: white;
+    position: absolute;
+    top: 223px;
+    margin-left: 20px;
+    width: 247px;
+    left: 0;
+  }
+
+  .transform {
+    animation: navup 0.3s both !important;
+  }
+
+  @keyframes navup {
+    from {
+      top: -350px;
+    }
+
+    to {
+      top: 0;
+    }
+  }
+
+  .hider {
+    display: none;
+  }
+
+  .icon-desk {
+    display: none !important;
+  }
+
+  .refrence-links ul li {
+    background: #eef2e6;
+    width: 207px;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+    padding: 8px 0;
+
+    border-radius: 15px;
+  }
+
+  .nav-hide {
+    display: block;
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin-top: 0;
+    padding: 17px 35px;
+    top: 0;
+    margin: 0;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 99;
+    background-color: #D6CDA4;
+  }
+
+  .nav-hide i {
+    font-size: 36px;
+  }
 
   .icon {
     position: fixed;
     right: 0;
     left: 0;
     margin-top: 0;
-    padding: 25px 35px;
+    padding: 17px 35px;
+    top: 0;
+    margin: 0;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 99;
+    background-color: #D6CDA4;
+  }
+
+  .icon {
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin-top: 0;
+    padding: 17px 35px;
     top: 0;
     margin: 0;
     cursor: pointer;
@@ -1144,10 +1278,31 @@ h2 {
     position: fixed;
     right: 0;
     top: 0;
-    margin-top: 86px;
+    margin-top: 67px;
     width: 100%;
     height: calc(100vh-86px);
     background-color: #1c6758;
     z-index: 999;
+  }
+
+  .arrow.toggle {
+    display: none;
+  }
+}
+
+@media (max-width:500px) {
+
+  .profile-bg h3 {
+    position: absolute;
+    top: 101px;
+  }
+
+  .profile-bg p {
+    color: white;
+    position: absolute;
+    top: 155px;
+    margin-left: 20px;
+    width: 247px;
+    left: 0;
   }
 }
