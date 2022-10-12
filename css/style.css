@@ -26,10 +26,7 @@ h2 {
   margin: 0;
 }
 
-.section {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+
 
 /* Navbar CSS Start */
 .hide-it {
@@ -919,31 +916,6 @@ h2 {
 
 /* Contact page CSS End */
 
-/* Responsive CSS */
-@media (max-width: 1366px) {
-  .refrence-links ul li a {
-    font-family: "Roboto Condensed";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23px;
-
-    text-align: center;
-
-    color: #1c6758;
-  }
-
-  .refrence-links ul li {
-    background: #eef2e6;
-
-    width: 180px;
-    margin: 0 auto;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    padding: 4px 0;
-    text-align: center;
-    border-radius: 15px;
-  }
-}
 
 /* Navbar Animation */
 @keyframes navup {
@@ -1101,4 +1073,81 @@ h2 {
     background-color: #D6CDA4;
   }
 
+}
+
+@media (max-width: 1366px) {
+  .refrence-links ul li a {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+
+    text-align: center;
+
+    color: #1c6758;
+  }
+
+  .refrence-links ul li {
+    background: #eef2e6;
+
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 4px 0;
+    text-align: center;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .profile-bg h3 {
+    position: absolute;
+    top: 160px;
+    left: 73px;
+    font-size: 60px;
+    color: white;
+  }
+
+  .profile-bg p {
+    color: white;
+    position: absolute;
+    top: 240px;
+    width: 350px;
+    left: 83px;
+  }
+
+  .project-modal.profle {
+
+    width: 78vw;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .icon {
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin-top: 0;
+    padding: 25px 35px;
+    top: 0;
+    margin: 0;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 99;
+    background-color: #D6CDA4;
+  }
+
+  .side-bar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-top: 86px;
+    width: 100%;
+    height: calc(100vh-86px);
+    background-color: #1c6758;
+    z-index: 999;
+  }
 }
