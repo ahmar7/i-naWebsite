@@ -949,6 +949,10 @@ h2 {
   display: none;
 }
 
+.typed-cursor {
+  display: none;
+}
+
 /* Contact page CSS End */
 
 
@@ -1170,6 +1174,28 @@ h2 {
 @media (max-width: 850px) {
   .mbl-only {
     display: block;
+    padding-top: 100px;
+    margin-left: 40px;
+
+  }
+
+
+  .typing {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+  }
+
+  .main-concept {
+    margin-top:
+      40px;
   }
 
   .main-concept {
@@ -1185,7 +1211,7 @@ h2 {
 
   .concept-block {
     width: 100%;
-    ;
+
   }
 
   .concept-block h3 {
@@ -1194,7 +1220,7 @@ h2 {
 
   .upe {
     background-color: #1C6758;
-    padding: 40px;
+    padding: 20px;
     box-sizing: border-box;
   }
 
