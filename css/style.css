@@ -328,6 +328,7 @@ h2 {
   width: 95%;
   margin: 0 auto;
   margin-top: 10px !important;
+  margin-bottom: 10px !important;
   box-sizing: border-box;
   padding: 20px;
 }
@@ -944,6 +945,9 @@ h2 {
   margin: 0 5px;
 }
 
+.mbl-only {
+  display: none;
+}
 
 /* Contact page CSS End */
 
@@ -1131,6 +1135,14 @@ h2 {
   }
 }
 
+@media (max-width: 1155px) {
+  .concept-block img {
+    position: absolute;
+    bottom: 0;
+    width: 43%;
+  }
+}
+
 @media (max-width: 1000px) {
   .profile-bg h3 {
     position: absolute;
@@ -1153,6 +1165,48 @@ h2 {
     width: 78vw;
     height: 80vh;
   }
+}
+
+@media (max-width: 850px) {
+  .mbl-only {
+    display: block;
+  }
+
+  .main-concept {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .concept-block img {
+    position: static;
+
+    width: 43%;
+  }
+
+  .concept-block {
+    width: 100%;
+    ;
+  }
+
+  .concept-block h3 {
+    display: none;
+  }
+
+  .upe {
+    background-color: #1C6758;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+
+  .main-container-bg {
+    min-height: auto;
+  }
+
+  .downe {
+    text-align: center;
+
+  }
+
 }
 
 @media (max-width: 768px) {
