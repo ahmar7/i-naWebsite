@@ -169,6 +169,10 @@ h2 {
 
 /* Navbar CSS End */
 /* Header CSS Start */
+.for-mbl {
+  display: none;
+}
+
 .landing-head {
   height: 12vh;
 }
@@ -1671,6 +1675,18 @@ h2 {
 
   .arrow.toggle {
     display: none;
+  }
+
+  .for-mbl {
+    display: block;
+  }
+
+  .for-desk {
+    display: none;
+  }
+
+  .background-bg {
+    background-color: #D6CDA4;
   }
 }
 
