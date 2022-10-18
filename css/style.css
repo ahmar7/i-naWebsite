@@ -1287,7 +1287,7 @@ h2 {
   }
 
   .story-collection.resonsive {
-    padding-top: 50px !important;
+    padding-top: 35px !important;
   }
 
   .story-section {
@@ -1480,6 +1480,14 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .heading-story {
+    text-align: center;
+    margin-top: 35px;
+    padding-bottom: 0;
+    font-weight: lighter;
+    font-size: 30px;
+  }
+
   .combine {
     display: none;
   }
@@ -1723,6 +1731,16 @@ h2 {
 }
 
 @media (max-width:580px) {
+  .project-modal {
+    border-radius: 18px;
+    box-shadow: 0 4px 26px -11px rgb(0 0 0 / 50%);
+    height: auto;
+    margin-top: 58px !important;
+    margin: 0 auto;
+    padding: 40px 24px !important;
+    width: 79vw;
+  }
+
   .story-section {
 
     margin: 10px 0;

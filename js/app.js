@@ -129,7 +129,7 @@ let CloseBookSix = () => {
 // typing text animation script
 $(document).ready(function () {
   var typed = new Typed(".typing", {
-    strings: ["I'm an Associate Professor of Art."],
+    strings: ["I-na Phuyuthanon, I’m an Associate Professor of Art"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
